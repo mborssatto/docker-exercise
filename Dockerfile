@@ -1,8 +1,8 @@
-FROM node:16-alpine
+FROM node:alpine
 
 RUN npm install -g nodemon
 
-WORKDIR /app
+# WORKDIR /app
 
 ADD package.json package-lock.json ./
 
